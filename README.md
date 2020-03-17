@@ -11,5 +11,7 @@ Shader ourShader("shader.vs", "/shader.fs");
 渲染的时候需要用到以下函数：
 例如：glEnableVertexAttribArray(0);//对应shader.vs中的layout (location = 0) in vec3 aPos; 
 例如：glEnableVertexAttribArray(1);//对应layout (location = 1) in vec3 aColor; 
+
+
 3.前两项中的program封装成了.h文件，使用方法是创建一个Shader类型的对象。然后在渲染循环中，对象需要引用use()方法。
 ourShader.use();
